@@ -6,11 +6,6 @@ against Elixir packages published via https://hex.pm.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
-## Support Elixir security!
-
-Do you know about a vulnerability that isn't listed in this database? Open an
-issue or submit a PR.
-
 ## Directory Structure
 
 The database is a list of directories that match the names of Elixir libraries
@@ -56,13 +51,17 @@ Each advisory file contains the advisory information in [YAML] format:
       url:
         - https://github.com/rubysec/ruby-advisory-db/issues/123457
 
+## Contributing
 
-[YAML]: http://yaml.org/
-[Sobelow]: https://github.com/nccgroup/sobelow
-[Dependabot]: https://dependabot.com
+Do you know about a vulnerability that isn't listed in this database? Open an
+issue or submit a PR.
 
 ## License
 
 All content in this repository is placed in the public domain.
 
 [![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/master/LICENSE.txt)
+
+[YAML]: http://yaml.org/
+[Sobelow]: https://github.com/nccgroup/sobelow
+[Dependabot]: https://dependabot.com
