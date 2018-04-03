@@ -1,6 +1,6 @@
 ---
 package: phoenix
-date_disclosed: 2017-03-14
+disclosure_date: 2017-03-14
 cve:
 link: https://elixirforum.com/t/security-releases-for-phoenix/4143
 title: |

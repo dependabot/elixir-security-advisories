@@ -1,6 +1,6 @@
 ---
 package: coherence
-date_disclosed: 2017-08-02
+disclosure_date: 2017-08-02
 cve:
 link: https://github.com/smpallen99/coherence/issues/270
 title: |
