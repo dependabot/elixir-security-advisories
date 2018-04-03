@@ -1,0 +1,14 @@
+---
+package: plug
+link: https://github.com/elixir-plug/plug/commit/8857f8ab4acf9b9c22e80480dae2636692f5f573
+title: |
+  Header Injection
+
+description: |
+  Cookie headers were not validated
+
+patched_versions:
+  - ~> 1.3.5
+  - ~> 1.2.5
+  - ~> 1.1.9
+  - ~> 1.0.6
