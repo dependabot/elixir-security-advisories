@@ -1,4 +1,4 @@
-# Elixir Advisory Database
+# Elixir Advisory Database [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
 The Elixir Advisory Database is a repository of security advisories filed
 against Elixir packages published via https://hex.pm.
