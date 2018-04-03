@@ -1,0 +1,19 @@
+---
+package: coherence
+cve:
+link: https://github.com/smpallen99/coherence/issues/270
+title: |
+  Permissive parameters and privilege escalation
+
+description: |
+  The Coherence library has "Mass Assignment"-like vulnerabilities. In particular, "registration"
+  endpoints (like creating, editing, updating), allow users to update any coherence_fields. This
+  means that, among other issues, users can automatically confirm their accounts by sending the
+  confirmed_at parameter with their registration request. Further, the library design and
+  documentation encourages insecure functionality by default.
+
+  For example, the "store" demo allows registering users to add themselves as admin:
+  https://github.com/smpallen99/store/blob/master/web/models/coherence/user.ex
+
+patched_versions:
+  - ">= 0.5.2"
