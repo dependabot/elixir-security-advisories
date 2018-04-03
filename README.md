@@ -6,6 +6,9 @@ against Elixir packages published via https://hex.pm.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
+**NOTE:** This database is currently in beta, and as such the format is subject
+to change. If you have suggestions, please create an issue.
+
 ## Directory Structure
 
 The database is a list of directories that match the names of Elixir libraries
