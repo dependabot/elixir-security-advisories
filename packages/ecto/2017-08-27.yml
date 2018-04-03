@@ -1,0 +1,14 @@
+---
+package: ecto
+cve:
+link: https://groups.google.com/forum/#!topic/elixir-ecto/0m4NPfg_MMU
+title: |
+  Missing `is_nil` requirement
+
+description: |
+  Ecto will not raise on queries with non-explicit nil comparisons (ie if they aren't checked with `is_nil`).
+
+patched_versions:
+  - "> 2.2.0"
+unaffected_versions:
+  - "< 2.2.0"
