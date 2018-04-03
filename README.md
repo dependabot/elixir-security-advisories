@@ -17,8 +17,8 @@ library.
 
     packages/:
       plug/:
-        CVE-2017-1000053.yml
-        CVE-2017-1000052.yml
+        2017-02-28.yml
+        2017-02-28_2.yml
 
 ## Format
 
