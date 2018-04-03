@@ -1,5 +1,6 @@
 ---
 package: ecto
+date_disclosed: 2017-08-27
 cve:
 link: https://groups.google.com/forum/#!topic/elixir-ecto/0m4NPfg_MMU
 title: |

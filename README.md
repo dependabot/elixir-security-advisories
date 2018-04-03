@@ -26,6 +26,7 @@ Each advisory file contains the advisory information in [YAML] format:
 
     ---
     package: plug
+    date_disclosed: 2017-02-28
     cve: 2017-1000052
     link: https://elixirforum.com/t/static-and-session-security-fixes-for-plug/3913
     title: |

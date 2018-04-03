@@ -1,5 +1,6 @@
 ---
 package: plug
+date_disclosed: 2017-02-28
 cve: 2017-1000053
 link: https://elixirforum.com/t/static-and-session-security-fixes-for-plug/3913
 title: |
