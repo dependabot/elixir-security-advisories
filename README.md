@@ -47,13 +47,6 @@ Each advisory file contains the advisory information in [YAML] format:
       - ~> 1.1.7
       - ~> 1.0.4
 
-    related:
-      cve:
-        - 2013-1234567
-        - 2013-1234568
-      url:
-        - https://github.com/rubysec/ruby-advisory-db/issues/123457
-
 ## Contributing
 
 Do you know about a vulnerability that isn't listed in this database? Open an
