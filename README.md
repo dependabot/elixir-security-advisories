@@ -6,7 +6,8 @@ against published Elixir packages.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
-**NOTE: This database will be in beta until 1st May, 2018. For format changes, please see [this issue][format-issue].**
+**NOTE: This database will be in beta until 1st May, 2018. For format changes,
+please see [this issue][format-issue].**
 
 [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
@@ -76,7 +77,7 @@ issue or submit a PR.
 
 All content in this repository is placed in the public domain.
 
-[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/master/LICENSE.txt)
+[![Public Domain](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://github.com/dependabot/elixir-security-advisories/blob/master/LICENSE.txt)
 
 [YAML]: http://yaml.org/
 [Sobelow]: https://github.com/nccgroup/sobelow
