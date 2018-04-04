@@ -6,8 +6,8 @@ against Elixir packages published via https://hex.pm.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
-**NOTE: This database is currently in beta, and as such the format is subject
-to change. If you have suggestions, please create an issue.**
+**NOTE: This database will be in beta until 1st May, 2018. If you have
+suggestions for format changes, please raise them in [this issue][format-issue].**
 
 [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
@@ -82,3 +82,4 @@ All content in this repository is placed in the public domain.
 [YAML]: http://yaml.org/
 [Sobelow]: https://github.com/nccgroup/sobelow
 [Dependabot]: https://dependabot.com
+[format-issue]: https://github.com/dependabot/elixir-security-advisories/issues/1
