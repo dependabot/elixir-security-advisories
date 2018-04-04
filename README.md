@@ -50,6 +50,24 @@ Each advisory file contains the advisory information in [YAML] format:
       - ~> 1.1.7
       - ~> 1.0.4
 
+    unaffected_versions:
+      - "< 1.0.0"
+
+## Schema
+
+There is linting in place to enforce the following schema for each advisory:
+
+| Attribute             | Type        | Description                                                            |
+|-----------------------|-------------|------------------------------------------------------------------------|
+| `package`             | String      | Name of the affected package.                                          |
+| `disclosure_date`     | Date        | Date the vulnerability was publicly disclosed (here or elsewhere).     |
+| `cve`                 | String/Null | (Optional) CVE assigned to the vulnerability.                          |
+| `link`                | String      | Link to the original disclosure / more details.                        |
+| `title`               | String      | Title of the vulnerability. This should be a (very) short description. |
+| `description`         | String      | Description of the vulnerability.                                      |
+| `patched_versions`    | Array       | Array of Elixir requirement strings specifying patched versions.       |
+| `unaffected_versions` | Array       | Array of Elixir requirement strings specifying unaffected versions.    |
+
 ## Contributing
 
 Do you know about a vulnerability that isn't listed in this database? Open an
