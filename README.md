@@ -1,13 +1,12 @@
 # Elixir Advisory Database
 
 The Elixir Advisory Database is a repository of security advisories filed
-against Elixir packages published via https://hex.pm.
+against published Elixir packages.
 
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
-**NOTE: This database will be in beta until 1st May, 2018. If you have
-suggestions for format changes, please raise them in [this issue][format-issue].**
+**NOTE: This database will be in beta until 1st May, 2018. For format changes, please see [this issue][format-issue].**
 
 [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
