@@ -6,9 +6,6 @@ against published Elixir packages.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
-**NOTE: This database will be in beta until 1st May, 2018. For format changes,
-please see [this issue][format-issue].**
-
 [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
 ## Directory Structure
