@@ -1,3 +1,5 @@
+<p align="center"><img src="logo/horizontalversion.png" alt="elixir-security-advisories" height="200px"></p>
+
 # Elixir Advisory Database
 
 The Elixir Advisory Database is a repository of security advisories filed
