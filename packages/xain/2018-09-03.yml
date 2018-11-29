@@ -1,0 +1,17 @@
+---
+package: plug
+disclosure_date: 2018-09-03
+link: https://github.com/smpallen99/xain/issues/18
+title: |
+  XSS Vulnerability
+
+description: |
+  XSS is possible via the use of the order query parameter. An example request
+  would look like:
+
+  ```
+  http://host/ressources?order=%27><script>alert(1);</script>
+  ```
+
+patched_versions:
+  - ">= 0.6.2"
