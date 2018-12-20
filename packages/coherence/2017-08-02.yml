@@ -1,7 +1,7 @@
 ---
 package: coherence
 disclosure_date: 2017-08-02
-cve:
+cve: 2018-20301
 link: https://github.com/smpallen99/coherence/issues/270
 title: |
   Permissive parameters and privilege escalation
