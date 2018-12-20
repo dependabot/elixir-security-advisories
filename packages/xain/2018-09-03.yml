@@ -1,6 +1,7 @@
 ---
 package: xain
 disclosure_date: 2018-09-03
+cve: 2018-20302
 link: https://github.com/smpallen99/xain/issues/18
 title: |
   XSS Vulnerability
