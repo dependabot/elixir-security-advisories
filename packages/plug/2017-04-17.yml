@@ -1,6 +1,7 @@
 ---
 package: plug
 disclosure_date: 2017-04-17
+cve: 2018-1000883
 link: https://github.com/elixir-plug/plug/commit/8857f8ab4acf9b9c22e80480dae2636692f5f573
 title: |
   Header Injection
