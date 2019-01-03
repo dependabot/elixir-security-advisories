@@ -8,6 +8,8 @@ against published Elixir packages.
 Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
 other automated tools to consume.
 
+This is also an [experimental web API] for the database.
+
 [![Build Status](https://travis-ci.org/dependabot/elixir-security-advisories.svg?branch=master)](https://travis-ci.org/dependabot/elixir-security-advisories)
 
 ## Directory Structure
@@ -81,4 +83,4 @@ All content in this repository is placed in the public domain.
 [YAML]: http://yaml.org/
 [Sobelow]: https://github.com/nccgroup/sobelow
 [Dependabot]: https://dependabot.com
-[format-issue]: https://github.com/dependabot/elixir-security-advisories/issues/1
+[experimental web API]: https://github.com/ex-security-advisory/api
