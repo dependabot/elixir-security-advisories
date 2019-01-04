@@ -28,6 +28,7 @@ library.
 Each advisory file contains the advisory information in [YAML] format:
 
     ---
+    id: 8268e120-60b4-4efb-b9ca-4e3faca0cca6
     package: plug
     disclosure_date: 2017-02-28
     cve: 2017-1000052
@@ -60,6 +61,7 @@ There is linting in place to enforce the following schema for each advisory:
 
 | Attribute             | Type        | Description                                                            |
 |-----------------------|-------------|------------------------------------------------------------------------|
+| `id`                  | String      | A version 4 UUID (use https://www.uuidgenerator.net/version4).         |
 | `package`             | String      | Name of the affected package.                                          |
 | `disclosure_date`     | Date        | Date the vulnerability was publicly disclosed (here or elsewhere).     |
 | `cve`                 | String/Null | (Optional) CVE assigned to the vulnerability.                          |

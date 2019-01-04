@@ -2,9 +2,7 @@ require "rspec"
 require "yaml"
 require_relative "./elixir_requirement"
 
-shared_examples_for "Advisory" do |path|
-  advisory = YAML.load_file(path)
-
+shared_examples_for "Advisory" do |path, advisory|
   describe path do
     let(:filename) { File.basename(path).chomp(".yml") }
 
@@ -14,6 +12,15 @@ shared_examples_for "Advisory" do |path|
       it { is_expected.to be_kind_of(String) }
       it "should be equal to filename (case-insensitive)" do
         expect(subject.downcase).to eq(package.downcase)
+      end
+    end
+
+    describe "id" do
+      subject(:id) { advisory['id'] }
+
+      it { is_expected.to be_kind_of(String) }
+      it "should be a uuid" do
+        expect(subject).to match(/^[a-f0-9]{8}-([a-f0-9]{4}-){3}[a-f0-9]{12}$/)
       end
     end
 
