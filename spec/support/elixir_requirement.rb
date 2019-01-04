@@ -2,7 +2,7 @@ require_relative "./elixir_version"
 
 module Elixir
   class Requirement < Gem::Requirement
-    OPS["=="] = lambda { |v, r| v == r }
+    OPS = OPS.merge("==" => ->(v, r) { v == r })
 
     # Override the version pattern to allow local versions
     quoted = OPS.keys.map { |k| Regexp.quote k }.join "|"
@@ -27,7 +27,7 @@ module Elixir
 
     def satisfied_by?(version)
       version = Elixir::Version.new(version.to_s)
-      super
+      requirements.all? { |op, rv| (OPS[op] || OPS["="]).call(version, rv) }
     end
   end
 end

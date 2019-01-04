@@ -1,5 +1,2 @@
 language: ruby
 cache: bundler
-
-before_install:
-  - gem update --system 2.7.7

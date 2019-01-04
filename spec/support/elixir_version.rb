@@ -10,12 +10,17 @@ module Elixir
                       '(\+[0-9a-zA-Z\-.]+)?'
 
     def self.correct?(version)
-      super(version.to_s.split("+").first)
+      version = version.to_s.split("+").first if version.to_s.include?("+")
+      super
     end
 
     def initialize(version)
       @version_string = version.to_s
-      version, @build_info = version.split("+")
+
+      if version.to_s.include?("+")
+        version, @build_info = version.to_s.split("+")
+      end
+
       super
     end
 
