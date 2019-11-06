@@ -1,0 +1,13 @@
+---
+id: fb810971-a5c6-4268-9bd7-d931f72a87ec
+package: sweet_xml
+disclosure_date: 2019-08-19
+cve: 2019-15160
+link: https://github.com/kbrw/sweet_xml/issues/71
+title: |
+  Inline DTD allows XML bomb attack
+
+description: |
+  The SweetXml (aka sweet_xml) package through 0.6.6 for Erlang and Elixir allows attackers to cause a denial of service (resource consumption) via an XML entity expansion attack with an inline DTD.
+
+patched_versions:
