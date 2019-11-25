@@ -1,0 +1,31 @@
+---
+id: bcdf62ae-14a8-4179-a0ff-a92d0ca06ceb
+package: pow_assent
+disclosure_date: 2019-11-25
+cve: 2019-16764
+link: https://github.com/pow-auth/pow_assent/security/advisories/GHSA-368c-xvrv-x986
+title: |
+  Denial of service
+
+description: |
+  ### Impact
+
+  The use of `String.to_atom/1` in PowAssent is susceptible to denial of
+  service attacks. In `PowAssent.Phoenix.AuthorizationController` a value is
+  fetched from the user provided params, and `String.to_atom/1` is used to
+  convert the binary value to an atom so it can be used to fetch the provider
+  configuration value. This is unsafe as it's user provided data, and can be
+  used to fill up the whole atom table of ~1M which will cause the app to
+  crash.
+
+  ### Workarounds
+
+  A plug can be used to validate `conn.params["provider"]` before it reaches
+  the `PowAssent.Phoenix.AuthorizationController`.
+
+  ### References
+
+  http://erlang.org/doc/efficiency_guide/commoncaveats.html#list_to_atom-1
+
+patched_versions:
+  - ">= 0.4.4"
