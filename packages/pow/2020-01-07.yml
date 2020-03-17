@@ -1,0 +1,31 @@
+---
+id: 1c6dd016-838d-4255-b826-ca63fa66a1c9
+package: pow
+disclosure_date: 2020-01-07
+cve: 2020-5205
+link: https://github.com/danschultzer/pow/security/advisories/GHSA-v2wf-c3j6-wpvw
+title: |
+  Session fixation
+
+description: |
+  ### Impact
+
+  The use of `Plug.Session` in `Pow.Plug.Session` is susceptible to session
+  fixation attacks if a persistent session store is used for `Plug.Session`,
+  such as Redis or a database. Cookie store, which is used in most Phoenix
+  apps, doesn't have this vulnerability.
+
+  ### Workarounds
+
+  Call `Plug.Conn.configure_session(conn, renew: true)` periodically and after
+  privilege change. A custom authorization plug can be written where the
+  `create/3` method should return the conn only after
+  `Plug.Conn.configure_session/2` have been called on it.
+
+  ### References
+
+  https://github.com/danschultzer/pow/commit/578ffd3d8bb8e8a26077b644222186b108da474f
+  https://www.owasp.org/index.php/Session_fixation
+
+patched_versions:
+  - ">= 1.0.16"
