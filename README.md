@@ -5,8 +5,8 @@
 The Elixir Advisory Database is a repository of security advisories filed
 against published Elixir packages.
 
-Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot] and
-other automated tools to consume.
+Advisory metadata is stored in [YAML] format for [Sobelow], [Dependabot],
+[MixAudit] and other automated tools to consume.
 
 This is also an [experimental web API] for the database.
 
@@ -85,4 +85,5 @@ All content in this repository is placed in the public domain.
 [YAML]: http://yaml.org/
 [Sobelow]: https://github.com/nccgroup/sobelow
 [Dependabot]: https://dependabot.com
+[MixAudit]: https://github.com/mirego/mix_audit
 [experimental web API]: https://github.com/ex-security-advisory/api
