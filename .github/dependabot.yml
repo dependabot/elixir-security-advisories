@@ -1,6 +1,6 @@
 version: 2
 update_configs:
-  - package-ecosystem: "ruby:bundler"
+  - package-ecosystem: "bundler"
     directory: "/"
     schedule:
       interval: "daily"
