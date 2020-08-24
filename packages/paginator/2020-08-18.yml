@@ -1,0 +1,16 @@
+---
+id: 75dd2048-1665-440f-b629-0149dbad5300
+package: paginator
+disclosure_date: 2020-08-18
+cve: 2020-15150
+link: https://github.com/duffelhq/paginator/security/advisories/GHSA-w98m-2xqg-9cvj
+title: |
+  Remote Code Execution
+
+description: |
+  Arbitrary code execution vulnerability in Paginator that can lead to
+  remote code execution (RCE) if its paginate() function is called with
+  untrusted input from a remote user.
+
+patched_versions:
+  - ">= 1.0.0"
