@@ -1,0 +1,17 @@
+---
+id: 298dc371-c851-456b-9af1-5adb1c07f9cb
+package: phoenix_html
+disclosure_date: 2021-09-23
+cve:
+link: https://github.com/phoenixframework/phoenix_html/commit/62a0139fb716bcdce697f6221244bd81d321d620
+title: |
+  XSS in HEEx class attributes
+
+description: |
+  The `class` attribute was not protected against XSS attacks when using HEEx.
+
+patched_versions:
+  - ">= 3.1.0"
+
+unaffected_versions:
+  - "< 3.0.0"
