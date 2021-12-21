@@ -11,4 +11,4 @@ description: |
   The SweetXml (aka sweet_xml) package through 0.6.6 for Erlang and Elixir allows attackers to cause a denial of service (resource consumption) via an XML entity expansion attack with an inline DTD.
 
 patched_versions:
-  - ">= 7.0.0"
+  - ">= 0.7.0"
