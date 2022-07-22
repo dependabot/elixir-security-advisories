@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+This repo was created before the GitHub Security Advisory DB supported Hex / Elixir. Now that [support has been added](https://github.blog/2022-06-27-github-advisory-database-now-supports-erlang-and-elixir-packages/), we've deprecated / archived this repo.
+
 <p align="center"><img src="logo/horizontalversion.png" alt="elixir-security-advisories" height="200px"></p>
 
 # Elixir Advisory Database
